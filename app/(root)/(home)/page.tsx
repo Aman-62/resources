@@ -36,6 +36,7 @@ const Page = async ({ searchParams }: Props) => {
             query={searchParams?.query || ""}
             category={searchParams?.category || ""}
           />
+
           <div className="mt-12 flex w-full flex-wrap justify-center gap-16 sm:justify-start">
             {resources?.length > 0 ? (
               resources.map((resource: any) => (
@@ -49,7 +50,7 @@ const Page = async ({ searchParams }: Props) => {
                 />
               ))
             ) : (
-              <p className="body-regular text-white-400">No resource found</p>
+              <p className="body-regular text-white-400">No resources found</p>
             )}
           </div>
         </section>

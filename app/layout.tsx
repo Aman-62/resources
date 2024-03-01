@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Projects hub",
   description: "All Projects at one Place",
+  other: {
+    "theme-color": "#0d1117",
+    "color-scheme": "dark only",
+    "twitter:image": "",
+    "og:url": "",
+    "og:image": "",
+    "og:type": "website",
+  },
 };
 
 export default function RootLayout({
